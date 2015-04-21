@@ -4,6 +4,7 @@ After running start-hdf.sh and start-yarn.sh create the output dir in hdfs
 
 It is also necessary to create a data dir in wordcount/data, and copy there some files to count their word content.
 > hdfs dfs -mkdir wordcount/data
+
 > hdfs dfs -copyFromLocal some_files*.txt wordcount/data/
 
 Then run the map reduce with streaming lib
